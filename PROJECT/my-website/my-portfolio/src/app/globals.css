@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* src/styles/globals.css */
+
+/* Apply Montserrat globally */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-montserrat), sans-serif; /* Use Montserrat with a fallback */
+  background-color: #000; /* Optional: Black background */
+  color: #fff; /* Optional: White text for readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-montserrat), sans-serif; /* Ensure headers use Montserrat */
+}
